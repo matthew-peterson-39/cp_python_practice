@@ -1,2 +1,16 @@
-Base case: 0 & 1 -> return 1
-fn = fn + (fn - 1) + (fn - 2) ...
+Formula: F(n) = F(n-1) + F(n-2)
+Base Case: F(0) = 0 and F(1) = 1
+
+Example: factorial(4) # => 24 (4 * 3 * 2 * 1)
+
+psuedo start
+    
+    function(arg)
+        check if arg is one of the base cases
+        if not base case
+            then update the total and call function again passing in updated arg
+
+        return the total after 
+
+end
+
