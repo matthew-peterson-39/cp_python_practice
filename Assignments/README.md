@@ -1,8 +1,8 @@
-### Code Platoon Python Practice/Exercises
+# Code Platoon Python Practice/Exercises
 <details>
   <summary>99 Bottles</summary>
 <br>
-  # 99 Bottles
+  ## 99 Bottles
   
   Write a program that can print the song "99 Bottles of Beer".
   
