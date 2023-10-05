@@ -9,4 +9,6 @@ One of the most popular coding challenges is to write an algorithm to return the
 Your challenge today is to write an algorithm that, given a number n, return the n-th Fibonacci Number. Keep in mind that the first two numbers in the fibonacci sequence are always [0,1]
 
 ### Examples:
-```bash find_fibonacci(3) -> 2 find_fibonacci(7) -> 13```
+
+find_fibonacci(3) -> 2 
+find_fibonacci(7) -> 13
