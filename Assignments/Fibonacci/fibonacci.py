@@ -1,4 +1,3 @@
-# Takes a number arguement and returns the fibonacci value of the number arguement index of the sequence.
 def fibonacci(numArg):
     if numArg < 2:
         if numArg == 1 or numArg == 2:
