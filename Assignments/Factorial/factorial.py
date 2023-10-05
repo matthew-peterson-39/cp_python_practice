@@ -7,3 +7,7 @@ def factorial(numArg):
     else:
         numArg *= factorial(numArg-1)
     return numArg
+
+print(factorial(6)) # 720
+print(factorial(10)) # 3628800
+print(factorial(3)) # 6
