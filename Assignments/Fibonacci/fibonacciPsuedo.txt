@@ -6,11 +6,11 @@ Example: factorial(4) # => 24 (4 * 3 * 2 * 1)
 psuedo start
     
     function(arg)
-        check if arg is one of the base cases
-        if not base case
-            then update the total and call function again passing in updated arg
-
+        if arg is one of the base cases
+            if 0 -> return 0
+            else 1 -> return 1
+        else 
+            update the total ( total += arg) and call function again passing in updated argq
         return the total after 
 
 end
-
