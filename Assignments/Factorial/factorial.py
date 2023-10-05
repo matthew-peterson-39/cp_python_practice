@@ -1,4 +1,2 @@
 def factorial():
     pass
-
- 
