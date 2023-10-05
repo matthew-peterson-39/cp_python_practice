@@ -6,5 +6,5 @@
 ## Misc.
   Holds random notes/practice exercises outside of the main.py file.
 
-### main.py
-  Main bulk of example code for day 1 of the python lecture.
+## main.py
+  Main bulk of example code for intro python lecture.
