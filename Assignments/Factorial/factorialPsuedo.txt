@@ -1,12 +1,19 @@
-** formula: f! = f * (f-1) * (f-2) ... **
-    edge cases -> if number give < 1
-        if 1 -> base cases
-        if 0 -> base cases
-        if < 0  -1 -> error
+        ***NOTES***
+
+formula: f! = f * (f-1) * (f-2) * ... 
+edge cases: 
+    if 0 or 1 -> return 1
+    if negative number -> return error
         
-function(arg: number): -> factorial
-    if base (1 or 0):
-        return 1 or 0
+        ***NOTES***
+
+function(number argument): -> return factorial of number
+    if number argument is < 2:
+        if 1 or 0:
+            return 1
+        else:
+            return error
     else:
-        multiply number argument by (number argument - 1)
-    return factorial
+        number argument *= the RETURN VALUE OF the factoral method passed number argument minus 1
+
+    return the factorial
