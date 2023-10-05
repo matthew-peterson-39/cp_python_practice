@@ -3,7 +3,7 @@
         if 1 -> base cases
         if 0 -> base cases
         if < 0  -1 -> error
-
+        
 function(arg: number): -> factorial
     if base (1 or 0):
         return 1 or 0
