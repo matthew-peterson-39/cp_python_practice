@@ -1,5 +1,5 @@
 def bottle_song():
-	# write your code here!
-	pass
+	print('testing')
+	return
 
 bottle_song()
