@@ -1,0 +1,12 @@
+** formula: f! = f * (f-1) * (f-2) ... **
+    edge cases -> if number give < 1
+        if 1 -> base cases
+        if 0 -> base cases
+        if < 0  -1 -> error
+
+function(arg: number): -> factorial
+    if base (1 or 0):
+        return 1 or 0
+    else:
+        multiply number argument by (number argument - 1)
+    return factorial
