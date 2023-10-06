@@ -10,7 +10,7 @@ def recursive(numArg):
         else:
              return "Error. Must be a positive number."
     else:
-        return (fibonacci(numArg-1) + fibonacci(numArg-2))
+        return recursive(numArg-1) + recursive(numArg-2)
     
 # For Loop Solutions.  
 def for_loop(numArg):
@@ -45,7 +45,7 @@ def while_loop(numArg):
         return f'While Loop: {current_result}'
 
 # Main fib function that is initially called.        
-def fibonacci(numArg, loop_type):
+def fibonacci(numArg, loop_type="RECUR"):
     # Check numArg initially incase it is 0 or 1
     # Add upper limit here of 10000 (add another zero and runtime error is thrown.)
     if numArg <= 2:
@@ -55,15 +55,15 @@ def fibonacci(numArg, loop_type):
             return 0
         else:
             return "Error. Negative number."
-    else:
-        match loop_type:
-            case 'WHILE': return while_loop(numArg)
-            case 'FOR': return for_loop(numArg)
-            case _ : return recursive(numArg)
 
-print(fibonacci(-1, 'FOR')) # ERROR.
+    match loop_type:
+        case 'WHILE': return while_loop(numArg)
+        case 'FOR': return for_loop(numArg)
+        case _: return f'Recur:  {recursive(numArg)}'
+    
+print(fibonacci(-1, 'FOR')) # Error. Negative number.
 print(fibonacci(0, 'WHILE')) # 0
 print(fibonacci(1, 'WHILE')) # 1
-print(fibonacci(2, 'WHILE')) # 1
-print(fibonacci(6, 'FOR')) # 8
-print(fibonacci(10000, 'WHILE')) # 13
+print(fibonacci(4, 'RECUR')) # Recur: 3
+print(fibonacci(6, 'Not')) # Recur: 8
+print(fibonacci(10000, 'WHILE')) # While Loop:
