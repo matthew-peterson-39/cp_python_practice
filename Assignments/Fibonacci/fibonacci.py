@@ -12,9 +12,8 @@ def recursive(numArg):
     else:
         return (fibonacci(numArg-1) + fibonacci(numArg-2))
     
-# For Loop Solutions. 
+# For Loop Solutions.  
 def for_loop(numArg):
-   
     # Initial Variables
     first_in_series = 0 # first number
     second_in_series =  1   # second number in fib series
